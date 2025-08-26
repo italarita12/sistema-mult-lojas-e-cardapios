@@ -19,14 +19,24 @@ const Index = () => {
             
             <div className="w-full mb-8">
               <div className="max-w-2xl mx-auto">
-                <div className="bg-gray-900 rounded-xl p-8 aspect-video flex items-center justify-center">
-                  <p className="text-white text-lg">Vídeo de Demonstração</p>
+                <div style={{padding:"178.22% 0 0 0", position:"relative"}}>
+                  <iframe 
+                    src="https://player.vimeo.com/video/1113066019?badge=0&autopause=0&player_id=0&app_id=58479" 
+                    frameBorder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}} 
+                    title="Sistema_de_Lojas_e_Cardápios_Online_-_Gere_R$_300_por_Dia"
+                  />
                 </div>
               </div>
             </div>
             
             <div className="mb-8">
-              <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-2xl hover:shadow-orange-500/25 px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300">
+              <Button 
+                className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-2xl hover:shadow-orange-500/25 px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300"
+                onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
+              >
                 QUERO MINHA PLATAFORMA AGORA
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
@@ -179,7 +189,10 @@ const Index = () => {
                 ))}
               </div>
               <div className="text-center">
-                <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full">
+                <Button 
+                  className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full"
+                  onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
+                >
                   QUERO COMEÇAR AGORA
                 </Button>
               </div>
@@ -286,7 +299,10 @@ const Index = () => {
                 </div>
               </div>
               <div className="text-center mt-8">
-                <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full">
+                <Button 
+                  className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full"
+                  onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
+                >
                   QUERO COMEÇAR A FATURAR
                 </Button>
               </div>
@@ -430,7 +446,10 @@ const Index = () => {
                 ))}
               </div>
               <div className="text-center">
-                <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full">
+                <Button 
+                  className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full"
+                  onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
+                >
                   QUERO ATENDER TODOS ESSES NICHOS
                 </Button>
               </div>
@@ -454,7 +473,11 @@ const Index = () => {
                     <span className="font-bold">🧑‍💻 O Que Você Vai Receber</span>
                   </div>
                   <h3 className="text-3xl font-bold text-gray-900 mb-2">Sistema Completo</h3>
-                  <div className="text-6xl font-bold text-blue-600 mb-2">R$67</div>
+                  <div className="mb-2">
+                    <span className="text-2xl text-gray-400 line-through">De R$ 1.990</span>
+                    <span className="text-xl text-gray-600 ml-2">por apenas</span>
+                  </div>
+                  <div className="text-6xl font-bold text-blue-600 mb-2">R$297</div>
                   <p className="text-gray-600">Pagamento único - Acesso vitalício</p>
                 </div>
                 
@@ -475,8 +498,11 @@ const Index = () => {
                 </div>
                 
                 <div className="text-center">
-                  <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300">
-                    QUERO MINHA PLATAFORMA AGORA — R$67
+                  <Button 
+                    className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300"
+                    onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
+                  >
+                    QUERO MINHA PLATAFORMA AGORA — R$297
                     <ShoppingCart className="ml-2 w-5 h-5" />
                   </Button>
                 </div>
@@ -524,61 +550,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Demo Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 border border-blue-200 text-blue-600 text-sm font-medium mb-6">
-              <Eye className="w-4 h-4 mr-2" />
-              <span className="font-bold">👀 Demonstração</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
-              VER O SISTEMA POR DENTRO
-            </h2>
-          </div>
-          
-          <Card>
-            <CardContent className="p-8 text-center">
-              <div className="mb-8">
-                <img 
-                  src="https://i.ibb.co/BHb9hjKH/Group-154-1024x678.png" 
-                  alt="Sistema de lojas online - Demonstração" 
-                  className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
-                />
-              </div>
-              
-              <div className="bg-gray-50 rounded-lg p-6 mb-8 max-w-md mx-auto">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">
-                  Credenciais de Acesso:
-                </h3>
-                <div className="space-y-3 text-left">
-                  <div>
-                    <span className="font-semibold text-gray-700">E-mail:</span>
-                    <div className="bg-white p-2 rounded border font-mono text-sm">
-                      admin@demo.com
-                    </div>
-                  </div>
-                  <div>
-                    <span className="font-semibold text-gray-700">Senha:</span>
-                    <div className="bg-white p-2 rounded border font-mono text-sm">
-                      12345678
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300">
-                👉 Ver como funciona Agora
-                <ExternalLink className="ml-2 w-5 h-5" />
-              </Button>
-              
-              <p className="text-gray-600 mt-4 text-sm">
-                Acesse a demonstração e veja o sistema funcionando na prática
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
 
       {/* Support Section */}
       <section className="py-20 bg-gradient-to-br from-green-50 to-emerald-50">
@@ -597,7 +568,10 @@ const Index = () => {
           </div>
           
           <div className="text-center">
-            <Button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300">
+            <Button 
+              className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300"
+              onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
+            >
               GARANTIR MINHA VAGA AGORA
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
