@@ -1,20 +1,73 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, ShoppingCart, AlertTriangle, Rocket, DollarSign, Settings, Users, Target, Star, Check, ExternalLink, Eye, MessageCircle, ChevronLeft, ChevronRight, TrendingUp } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { 
+  Store, 
+  Menu, 
+  CreditCard, 
+  BarChart3, 
+  Users, 
+  ShoppingCart, 
+  Smartphone, 
+  Palette, 
+  MessageSquare, 
+  Shield, 
+  TrendingUp, 
+  Clock,
+  CheckCircle2,
+  Star,
+  Zap,
+  Globe,
+  Eye,
+  Lock,
+  ArrowRight,
+  AlertTriangle,
+  Rocket,
+  DollarSign,
+  Settings,
+  Target,
+  Check,
+  ExternalLink,
+  MessageCircle,
+  ChevronLeft,
+  ChevronRight,
+  Package,
+  Headphones,
+  Monitor,
+  Upload,
+  Wifi,
+  Heart,
+  Home,
+  ShoppingBag
+} from "lucide-react";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      {/* Fixed Top Demo Button */}
+      <div className="fixed top-4 right-4 z-50">
+        <a href="#demo" className="inline-block">
+          <Button 
+            size="sm"
+            className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white shadow-lg hover:shadow-purple-500/25 rounded-full font-medium"
+          >
+            <Eye className="mr-2 w-4 h-4" />
+            Ver Demonstração
+          </Button>
+        </a>
+      </div>
+
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-gray-800 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-20"></div>
+      <section className="relative bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50 text-gray-800 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22hsl(262%2C83%25%2C58%25)%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="text-center">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
               <span className="block text-gray-900">Seu Próprio Sistema de</span>
-              <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent whitespace-nowrap">Lojas e Cardápios Online</span>
+              <span className="block bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent whitespace-nowrap">Lojas e Cardápios Online</span>
               <span className="block text-gray-900">Gerando</span>
-              <span className="block text-green-600 text-4xl md:text-6xl">R$ 300 por Dia</span>
+              <span className="block text-emerald-600 text-4xl md:text-6xl">R$ 300 por Dia</span>
             </h1>
             
             <div className="w-full mb-8">
@@ -44,36 +97,53 @@ const Index = () => {
             </div>
             
             <div className="max-w-4xl mx-auto mb-8">
-              <img 
-                src="https://i.ibb.co/BHb9hjKH/Group-154-1024x678.png" 
-                alt="Sistema de lojas online" 
-                className="w-full h-64 md:h-80 object-cover rounded-xl shadow-lg"
-              />
+              <Card className="bg-gradient-to-br from-white/50 to-purple-50/50 border border-purple-200 shadow-xl">
+                <CardContent className="p-8">
+                  <div className="flex items-center justify-center gap-8 flex-wrap">
+                    <div className="flex flex-col items-center gap-4">
+                      <Store className="w-16 h-16 text-purple-600" />
+                      <span className="text-sm font-semibold text-purple-700">Lojas Online</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-4">
+                      <Menu className="w-16 h-16 text-blue-600" />
+                      <span className="text-sm font-semibold text-blue-700">Cardápios Digitais</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-4">
+                      <Smartphone className="w-16 h-16 text-emerald-600" />
+                      <span className="text-sm font-semibold text-emerald-700">WhatsApp Integrado</span>
+                    </div>
+                    <div className="flex flex-col items-center gap-4">
+                      <BarChart3 className="w-16 h-16 text-orange-600" />
+                      <span className="text-sm font-semibold text-orange-700">Relatórios</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
             
             <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-8 text-left">
               <div className="flex items-center gap-3">
-                <span className="text-green-500 text-xl">✅</span>
+                <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                 <span className="text-gray-700">Crie lojas online ou cardapio digital</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-green-500 text-xl">✅</span>
+                <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                 <span className="text-gray-700">Cobre mensalidades recorrentes de cada lojista</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-green-500 text-xl">✅</span>
+                <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                 <span className="text-gray-700">Plataforma 100% sua, com sua marca e domínio</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-green-500 text-xl">✅</span>
+                <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                 <span className="text-gray-700">Lojistas recebem pedidos direto no WhatsApp</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-green-500 text-xl">✅</span>
+                <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                 <span className="text-gray-700">Clientes ilimitados, lucro 100% no seu bolso</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-green-500 text-xl">✅</span>
+                <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                 <span className="text-gray-700">Instalação simples</span>
               </div>
             </div>
@@ -87,13 +157,72 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Demo Section */}
+      <section id="demo" className="py-20 bg-gradient-to-br from-purple-50 to-indigo-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-purple-100 border border-purple-200 text-purple-600 text-sm font-medium mb-6">
+              <Eye className="w-4 h-4 mr-2" />
+              <span className="font-bold">Sistema em Funcionamento</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Veja Como Funciona na Prática
+            </h2>
+            <p className="text-xl text-gray-600 mb-8">
+              Acesse a demonstração e veja o sistema funcionando na prática
+            </p>
+          </div>
+          
+          <Card className="bg-white border-2 border-purple-200 shadow-xl">
+            <CardContent className="p-8">
+              <div className="text-center mb-8">
+                <div className="bg-gradient-to-br from-purple-100 to-indigo-100 p-6 rounded-xl mb-6">
+                  <div className="flex items-center justify-center gap-6 mb-6">
+                    <div className="bg-white p-3 rounded-full shadow-md">
+                      <Lock className="w-6 h-6 text-purple-600" />
+                    </div>
+                    <div className="bg-white p-3 rounded-full shadow-md">
+                      <Monitor className="w-6 h-6 text-indigo-600" />
+                    </div>
+                    <div className="bg-white p-3 rounded-full shadow-md">
+                      <Globe className="w-6 h-6 text-blue-600" />
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Credenciais de Acesso</h3>
+                  <div className="grid md:grid-cols-2 gap-6 max-w-md mx-auto">
+                    <div className="bg-white p-4 rounded-lg border border-gray-200">
+                      <p className="text-sm font-medium text-gray-600 mb-1">E-mail:</p>
+                      <p className="text-lg font-bold text-gray-900 select-all">1@gmail.com</p>
+                    </div>
+                    <div className="bg-white p-4 rounded-lg border border-gray-200">
+                      <p className="text-sm font-medium text-gray-600 mb-1">Senha:</p>
+                      <p className="text-lg font-bold text-gray-900 select-all">12345678</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <Button 
+                  size="lg"
+                  className="bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white px-8 py-4 text-lg font-bold rounded-full transform hover:scale-105 transition-all duration-300"
+                  onClick={() => window.open('https://neolojas.online/login/', '_blank')}
+                >
+                  <Eye className="mr-2 w-5 h-5" />
+                  Ver como funciona Agora
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* Problem Section */}
-      <section className="py-20 bg-red-50">
+      <section className="py-20 bg-gradient-to-br from-red-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-red-100 border border-red-200 text-red-600 text-sm font-medium mb-6">
               <AlertTriangle className="w-4 h-4 mr-2" />
-              <span className="font-bold">🚨 O Problema</span>
+              <span className="font-bold">O Problema</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Milhões de Lojistas Perdendo Vendas Todos os Dias
@@ -118,9 +247,11 @@ const Index = () => {
                 subtitle: "Quando tentam criar um site, esbarram em dificuldades"
               }
             ].map((item, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-red-500">
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-red-500 bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-8 text-center">
-                  <div className="text-4xl mb-4">🔴</div>
+                  <div className="bg-red-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                    <AlertTriangle className="w-8 h-8 text-red-600" />
+                  </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-4">{item.title}</h3>
                   <p className="text-gray-600">{item.subtitle}</p>
                 </CardContent>
@@ -134,9 +265,9 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-br from-green-50 to-emerald-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-100 border border-green-200 text-green-600 text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-600 text-sm font-medium mb-6">
               <Rocket className="w-4 h-4 mr-2" />
-              <span className="font-bold">🚀 A Solução</span>
+              <span className="font-bold">A Solução</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Com o Sistema Lojas e Cardapio, Você Vira o Dono da Plataforma
@@ -146,24 +277,26 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
               {
-                icon: "🏷️",
+                icon: Palette,
                 title: "Coloque sua marca e logotipo",
                 subtitle: "Sistema 100% personalizado com sua identidade"
               },
               {
-                icon: "⚡",
+                icon: Zap,
                 title: "Crie e venda Lojas em poucos minutos",
                 subtitle: "Processo rápido e simples de criação"
               },
               {
-                icon: "💰",
+                icon: DollarSign,
                 title: "Cobre mensalidades e tenha renda recorrente",
                 subtitle: "Modelo de negócio sustentável e escalável"
               }
             ].map((item, index) => (
-              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-green-500">
+              <Card key={index} className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-emerald-500 bg-white/80 backdrop-blur-sm">
                 <CardContent className="p-8 text-center">
-                  <div className="text-4xl mb-4">{item.icon}</div>
+                  <div className="bg-emerald-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                    <item.icon className="w-8 h-8 text-emerald-600" />
+                  </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-4">{item.title}</h3>
                   <p className="text-gray-600">{item.subtitle}</p>
                 </CardContent>
@@ -178,14 +311,17 @@ const Index = () => {
               </h3>
               <div className="space-y-4 mb-8">
                 {[
-                  "⚙️ Você instala o sistema (passo a passo em vídeo).",
-                  "💰 Cria planos (mensal, trimestral, anual) e define preços.",
-                  "🏪 Voce ou Seu Cliente Cria a loja (em minutos) e ja recebe o acesso.",
-                  "📱 O lojista cadastra produtos, fotos, preços e recebe pedidos no WhatsApp.",
-                  "💵 Você fatura todo mês sem precisar programar."
+                  { icon: Settings, text: "Você instala o sistema (passo a passo em vídeo)." },
+                  { icon: DollarSign, text: "Cria planos (mensal, trimestral, anual) e define preços." },
+                  { icon: Store, text: "Voce ou Seu Cliente Cria a loja (em minutos) e ja recebe o acesso." },
+                  { icon: Smartphone, text: "O lojista cadastra produtos, fotos, preços e recebe pedidos no WhatsApp." },
+                  { icon: TrendingUp, text: "Você fatura todo mês sem precisar programar." }
                 ].map((step, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <span className="text-lg">{step}</span>
+                  <div key={index} className="flex items-center gap-4 p-4 bg-emerald-50 rounded-lg">
+                    <div className="bg-emerald-100 p-2 rounded-full">
+                      <step.icon className="w-5 h-5 text-emerald-600" />
+                    </div>
+                    <span className="text-gray-800 font-medium">{step.text}</span>
                   </div>
                 ))}
               </div>
