@@ -18,8 +18,8 @@ const Index = () => {
             </h1>
             
             <div className="w-full mb-8">
-              <div className="max-w-2xl mx-auto">
-                <div style={{padding:"178.22% 0 0 0", position:"relative"}}>
+              <div className="max-w-xl mx-auto">
+                <div style={{padding:"120% 0 0 0", position:"relative"}}>
                   <iframe 
                     src="https://player.vimeo.com/video/1113066019?badge=0&autopause=0&player_id=0&app_id=58479" 
                     frameBorder="0" 
@@ -33,13 +33,14 @@ const Index = () => {
             </div>
             
             <div className="mb-8">
-              <Button 
-                className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-2xl hover:shadow-orange-500/25 px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300"
-                onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
-              >
-                QUERO MINHA PLATAFORMA AGORA
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+              <a href="#ofertas" className="inline-block">
+                <Button 
+                  className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white shadow-2xl hover:shadow-orange-500/25 px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300"
+                >
+                  QUERO MINHA PLATAFORMA AGORA
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </a>
             </div>
             
             <div className="max-w-4xl mx-auto mb-8">
@@ -189,12 +190,13 @@ const Index = () => {
                 ))}
               </div>
               <div className="text-center">
-                <Button 
-                  className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full"
-                  onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
-                >
-                  QUERO COMEÇAR AGORA
-                </Button>
+                <a href="#ofertas" className="inline-block">
+                  <Button 
+                    className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full"
+                  >
+                    QUERO COMEÇAR AGORA
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
@@ -299,12 +301,13 @@ const Index = () => {
                 </div>
               </div>
               <div className="text-center mt-8">
-                <Button 
-                  className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full"
-                  onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
-                >
-                  QUERO COMEÇAR A FATURAR
-                </Button>
+                <a href="#ofertas" className="inline-block">
+                  <Button 
+                    className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full"
+                  >
+                    QUERO COMEÇAR A FATURAR
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
@@ -446,12 +449,13 @@ const Index = () => {
                 ))}
               </div>
               <div className="text-center">
-                <Button 
-                  className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full"
-                  onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
-                >
-                  QUERO ATENDER TODOS ESSES NICHOS
-                </Button>
+                <a href="#ofertas" className="inline-block">
+                  <Button 
+                    className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-8 py-4 text-lg font-bold rounded-full"
+                  >
+                    QUERO ATENDER TODOS ESSES NICHOS
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
@@ -497,7 +501,7 @@ const Index = () => {
                   ))}
                 </div>
                 
-                <div className="text-center">
+                <div className="text-center" id="ofertas">
                   <Button 
                     className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300"
                     onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
@@ -568,13 +572,14 @@ const Index = () => {
           </div>
           
           <div className="text-center">
-            <Button 
-              className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300"
-              onClick={() => window.open('https://gestor.click/views/dados_pessoais.php?produto_id=31', '_blank')}
-            >
-              GARANTIR MINHA VAGA AGORA
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <a href="#ofertas" className="inline-block">
+              <Button 
+                className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white px-12 py-4 text-xl font-bold rounded-full transform hover:scale-105 transition-all duration-300"
+              >
+                GARANTIR MINHA VAGA AGORA
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
